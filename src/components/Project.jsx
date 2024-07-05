@@ -14,7 +14,7 @@ const Project = () => {
             />
             <Card 
                 imgSrc={Portfolio} 
-                hRef='https://pratyushsinha213.github.io/NomadNav-Travel-Itinerary-Planner/login.html'
+                hRef='https://pratyushsinha213.github.io/my-react-portfolio/'
                 heading="Portfolio"  
                 // paragraph="This is paragraph 2"
             />
