@@ -1,0 +1,29 @@
+@keyframes fadeAndRotate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.image-container {
+    .image {
+        position: relative;
+        left: 50%;
+        width: 700px;
+        height: 850px;
+        min-width: 10%;
+        border-radius: 10px;
+        animation: fadeAndRotate 2s 3s backwards;
+    }
+
+    @media (max-width: 500px) {
+        .image {
+            width: 350px;
+            height: 445px;
+        }
+    }
+}
