@@ -5,24 +5,37 @@
 
 .home-page {
     display: block;
-    
+    padding: 20px;
+
     .text-zone {
         color: #ffd700;
         font-family: 'Tiny5';
         font-size: large;
-        position: absolute;
-        /* left: 15%; */ margin-left: 160px;
+        position: relative;
+        margin: 0 auto;
         letter-spacing: 3px;
         line-height: 55px;
-        /* opacity: 0.7; */
-        /* transform: translateY(30%); */ top: 100px;
-        width: 50% auto;
+        left: 15%;
+        top: 100px;
+        width: 40%;
         max-height: 90%;
         animation: fadeIn 1s 1s backwards;
         display: inline-block;
+
+        @media (max-width: 768px) {
+            left: 18%;
+            top: 50px;
+            width: 60%;
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            line-height: 35px;
+            text-align: center;
+        }
     }
 
-    h1{
+    h1 {
         color: #fff;
         font-size: 53px;
         margin: 0;
@@ -49,14 +62,30 @@
             opacity: 0.6;
             animation: fadeIn 1s 1.7s backwards;
         }
+
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 28px;
+
+            &::before, &::after {
+                font-size: 14px;
+            }
+        }
     }
 
     h2 {
         color: #8d8d8d;
         margin-top: 20px;
-        // font-family: sans-serif;
         letter-spacing: 5px;
         animation: fadeIn 1s 2.4s backwards;
+
+        @media (max-width: 500px) {
+            font-size: 18px;
+            letter-spacing: 3px;
+        }
     }
 
     .flat-button {
@@ -67,13 +96,20 @@
         padding: 10px 18px;
         border: 1px solid #ffd700;
         margin-top: 25px;
-        float: left;
+        display: inline-block;
         animation: fadeIn 1s 3s backwards;
         white-space: nowrap;
 
         &:hover {
             background: #ffd700;
             color: #333;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            padding: 0px 10px;
+            margin-top: -20%;
+            letter-spacing: 2px;
         }
     }
 

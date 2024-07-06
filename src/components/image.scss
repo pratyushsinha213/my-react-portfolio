@@ -27,3 +27,37 @@
         }
     }
 }
+
+@keyframes fadeAndRotate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.image-container {
+    .image {
+        position: relative;
+        top: 100px;
+        left: 65%;
+        width: 550px;
+        height: 700px;
+        min-width: 10%;
+        border-radius: 10px;
+        animation: fadeAndRotate 2s 3s backwards;
+
+        @media (max-width: 768px) {
+            width: 200px;
+            height: 320px;
+            left: 35%;
+            top: 560px
+        }
+
+        @media (max-width: 500px) {
+        }
+    }
+}
