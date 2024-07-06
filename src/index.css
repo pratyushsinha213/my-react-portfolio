@@ -7,7 +7,7 @@ body {
     display: block;
     overflow: hidden;
 }
-    
+
 
 .nav-bar-left {
     background: black;
@@ -20,21 +20,21 @@ body {
     min-height: 500px;
     padding-left: 20px;
     padding-right: 15px;
-}
- 
-.nav-bar-left .logo-nav {
-    /* border: 1px solid white; */
-    margin-top: 10px;
-    margin-left: -13px;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    display: block;
-}
-
-.nav-bar-left .logo {
-    display: block;
-    padding: 8px 0;
+    
+    .logo-nav {
+        /* border: 1px solid white; */
+        margin-top: 10px;
+        margin-left: -13px;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        display: block;
+    }
+    
+    .logo {
+        display: block;
+        padding: 8px 0;
+    }
 }
 
 nav {
@@ -172,91 +172,3 @@ ul {
     z-index: 1;
     /* transform-style: preserve-3d; */
 }
-
-/* This is the about page css styling */
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.about-page {
-    .text-zone {
-        position: absolute;
-        left: 12%;
-        top: 40%;
-        transform: translateY(-50%);
-        width: 40%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
-
-        h1 {
-            font-size: 53px;
-            font-family: 'Tiny5';
-            color: #ffd700;
-            margin-top: 0;
-            position: relative;
-            margin-bottom: 40px;
-            left: 10px;
-            animation: pulse 1s 0.5s;
-
-            &::before {
-                content: '<h1>';
-                font-family: 'La Belle Aurore';
-                color: #ffd700;
-                font-size: 20px;
-                position: relative;
-                margin-top: -50px;
-                left: -10px;
-                margin-right: 20px;
-                opacity: 0.6;
-                line-height: 10px;
-                animation: pulse 1s 0.3s;
-            }
-    
-            &::after {
-                content: '<h1/>';
-                font-family: 'La Belle Aurore';
-                color: #ffd700;
-                font-size: 20px;
-                position: relative;
-                margin-top: 20px;
-                margin-left: 15px;
-                opacity: 0.6;
-                animation: pulse 1s 0.3s;
-            }
-        }
-        p {
-            font-size: 20px;
-            color: white;
-            font-family: 'Tiny5';
-            font-weight: 300;
-            letter-spacing: 1.4px;
-            min-width: fit-content;
-            /* text-align: justify; */
-            animation: pulse 1s;
-
-            &:nth-of-type(1) {
-                animation-delay: 0.6s;
-            }
-            &:nth-of-type(2) {
-                animation-delay: 0.7s;
-            }
-            &:nth-of-type(3) {
-                animation-delay: 0.8s;
-            }
-            &:nth-of-type(4) {
-                animation-delay: 0.9s;
-            }
-        }
-    }
-}
-
