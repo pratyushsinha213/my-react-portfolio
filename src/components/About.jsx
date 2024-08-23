@@ -1,9 +1,12 @@
 import { faBootstrap, faCss3, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './about.scss';
+import BG2 from "./BG2";
 
 const About = () => {
     return (
+        <>
+        <BG2 />
         <div className="container about-page">
             <div className="text-zone">
                 <h1>About Me</h1>
@@ -34,6 +37,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

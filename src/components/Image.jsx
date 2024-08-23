@@ -1,12 +1,7 @@
-import './image.scss';
-import image from '../assets/profile-picture.jpg'
+import Spline from '@splinetool/react-spline';
 
-const Image = () => {
+export default function Image() {
   return (
-    <div className='image-container'>
-        <img className='image' src={image} alt='Profile Pic' />
-    </div>
-  )
+    <Spline scene="https://prod.spline.design/zuSJbmN92ysFG4bq/scene.splinecode" />
+  );
 }
-
-export default Image;
